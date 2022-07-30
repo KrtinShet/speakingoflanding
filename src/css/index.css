@@ -12,8 +12,7 @@ body {
   color: #fafafa;
   font-weight: bold;
   font-size: 50px;
-  width: 100vw;
-  height: 100vh;
+  overflow: hidden;
 }
 
 a {
@@ -23,9 +22,10 @@ a {
 }
 
 .container {
-  padding: 2rem 8rem;
-  max-width: 1100px;
-  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
 }
 
 .container h1 {
@@ -33,75 +33,58 @@ a {
   margin-bottom: 5rem;
 }
 
+.banner-text {
+  position: relative;
+  z-index: 20;
+}
+
 .stripes {
   position: absolute;
-  left: -10px;
+  height: calc(0.7 * 100vh);
   z-index: -10;
+  width: 50%;
+  top: 0;
+  right: 20rem;
 }
+.line{
+  width: 2000px;
+  transform: rotate(-45deg);
+  position: relative;
+}
+
 
 .line1 {
-  position: relative;
-  width: 2184px;
-  left: 456px;
-  top: 20px;
+  left: 240px;
   border: 10px solid #aef5ed;
-  transform: rotate(-45deg);
 }
 .line2 {
-  position: relative;
-  width: 2184px;
-  height: 0px;
-  left: 535px;
-  top: 20px;
+  left: 160px;
   border: 10px solid #95c0fb;
-  transform: rotate(-45deg);
 }
 .line3 {
-  position: relative;
-  width: 2184px;
-  height: 0px;
-  left: 615px;
-  top: 20px;
+  left: 80px;
   border: 10px solid #ff8fd9;
-  transform: rotate(-45deg);
 }
 .line4 {
-  position: relative;
-  width: 2184px;
-  height: 0px;
-  left: 695px;
-  top: 20px;
   border: 10px solid #e5faa8;
-  transform: rotate(-45deg);
-}
+} 
 
 footer {
-  position: relative;
+  position: absolute;
+  border-top: 2px white solid;
+  width: 100% !important;
+  background-color: #051113;
+  left: 0;
+  top: calc(0.7 * 100vh);
   z-index: 10;
-  background: #051113;
-  width: 200%;
-  height: calc(0.26 * 100vh);
-  max-width: 100% !important;
 }
 
-footer div{
-  width: 100%;
+footer div {
+  margin-top: 5rem !important;
 }
 
-hr {
-  margin-top: 20%;
-}
-
-footer a {
-  margin-top: 5rem;
+footer div a {
   display: flex;
-  text-align: center;
   align-items: center;
-  width: max-content;
-}
-
-footer img {
-  width: 82px;
-  height: 67px;
-  margin-right: 2rem;
+  align-content: center;
 }
