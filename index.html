@@ -1,34 +1,541 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+      body {
+        background: #051113;
+      }
+      .frame-11265 {
+        /* Frame 11256 */
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+        position: absolute;
+        width: 858px;
+        height: 283px;
+        left: 170px;
+        top: 398.5px;
+      }
+
+      .speakingof {
+        /* Speakingof. */
+        width: 858px;
+        height: 182px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 150px;
+        line-height: 182px;
+        /* identical to box height */
+        letter-spacing: -0.01em;
+        color: #fafafa;
+        text-shadow: 5px 5px 6px rgba(5, 17, 19, 0.4),
+          1px 1px 30px rgba(255, 255, 255, 0.25);
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+      .frame-11255 {
+        /* Frame 11255 */
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 255px;
+        height: 61px;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+      }
+      .building {
+        /* Building */
+        width: 200px;
+        height: 61px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+        /* identical to box height */
+        color: #ffffff;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .hammer {
+        font-size: 50px;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+      }
+      .checkusbtn {
+        /* Frame 11258 */
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 30px;
+        gap: 15px;
+
+        position: absolute;
+        width: 250px;
+        height: 66px;
+        right: 204px;
+        top: 116px;
+
+        background: #ffffff;
+        box-shadow: -137px 120px 51px rgba(11, 36, 40, 0.01),
+          -88px 77px 47px rgba(11, 36, 40, 0.12),
+          -49px 43px 39px rgba(11, 36, 40, 0.4),
+          -22px 19px 29px rgba(11, 36, 40, 0.68),
+          -5px 5px 16px rgba(11, 36, 40, 0.79),
+          0px 0px 0px rgba(11, 36, 40, 0.8);
+        border-radius: 44px;
+      }
+
+      .checkusbtn a {
+        /* Check us at */
+        width: 140px;
+        height: 36px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #000000;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .frame-11583 {
+        /* Frame 11583 */
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 491px;
+        /* height: 1350px; */
+        left: 0px;
+        top: -140px;
+        overflow: hidden;
+      }
+      .frame-11583-xyz {
+        /* xyz xyz xyz xyz xyz */
+
+        width: 491px;
+        height: 1350px;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 277px;
+        line-height: 97.52%;
+        position: relative;
+        z-index: -10;
+        overflow-y: hidden !important;
+        /* or 270px */
+
+        color: #051113;
+        letter-spacing: 0.02em;
+
+        /* border: 2px solid #ffffff !important; */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffffff;
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .stripes-container {
+        position: absolute;
+        height: 1080px;
+        /* left: 30.62%; */
+        left: 18%;
+        right: 0%;
+        top: calc(50% - 1080px / 2);
+        overflow: hidden;
+      }
+
+      .stripes-inner-container {
+        position: absolute;
+        width: 1783.92px;
+        height: 1544.73px;
+        left: -132px;
+        top: -450px;
+      }
+      .stripes-line1 {
+        position: absolute;
+        width: 2184.58px;
+        height: 0px;
+        left: 107.19px;
+        top: 1226.73px;
+
+        border: 10px solid #e5faa8;
+        transform: rotate(-45deg);
+      }
+      .stripes-line2 {
+        position: absolute;
+        width: 2184.58px;
+        height: 0px;
+        left: 27.46px;
+        top: 1226.73px;
+
+        border: 10px solid #ff8fd9;
+        transform: rotate(-45deg);
+      }
+      .stripes-line3 {
+        position: absolute;
+        width: 2184.58px;
+        height: 0px;
+        left: -52.27px;
+        top: 1226.73px;
+
+        border: 10px solid #95c0fb;
+        transform: rotate(-45deg);
+      }
+      .stripes-line4 {
+        position: absolute;
+        width: 2184.58px;
+        height: 0px;
+        left: -132px;
+        top: 1226.73px;
+
+        border: 10px solid #aef5ed;
+        transform: rotate(-45deg);
+      }
+
+      @media screen and (max-width: 837px) {
+        body {
+          position: relative;
+          width: 837px;
+          height: 1080px;
+        }
+        .frame-11265 {
+          justify-content: center;
+          padding: 0px;
+          gap: 20px;
+          width: 658px;
+          height: 220px;
+          left: 80px;
+          top: 430px;
+        }
+
+        .speakingof {
+          /* Speakingof. */
+          width: 658px;
+          height: 139px;
+          font-size: 115px;
+          line-height: 139px;
+        }
+        /*
+              .frame-11255 {
+              } */
+
+        /* .building {
+              } */
+
+        .hammer {
+          font-size: 45px;
+        }
+        .checkusbtn {
+          /* Frame 11258 */
+          padding: 15px 25px;
+          width: 231px;
+          height: 66px;
+          right: 80px;
+          top: 90px;
+        }
+
+        .checkusbtn a {
+          /* Check us at */
+          width: 136px;
+        }
+
+        .frame-11583 {
+          /* Frame 11583 */
+          /* Auto layout */
+          width: 332px;
+          height: 910px;
+          left: 0px;
+          top: -110px;
+          overflow-y: hidden !important;
+        }
+        .frame-11583-xyz {
+          /* xyz xyz xyz xyz xyz */
+
+          width: 332px;
+          height: 910px;
+          font-size: 187px;
+          z-index: -10;
+          overflow-y: hidden !important;
+          /* or 270px */
+        }
+
+        .stripes-container {
+          left: -15%;
+          /* right: -57.35%; 80*/
+          /* right: -100%; */
+          top: calc(50% - 1080px / 2 + 105px);
+        }
+
+        .stripes-inner-container {
+          position: absolute;
+          width: 1783.92px;
+          height: 1544.73px;
+          left: -132px;
+          top: -850px;
+          z-index: -10;
+        }
+
+        .stripes-line1 {
+          position: absolute;
+          width: 2184.58px;
+          height: 0px;
+          left: 107.19px;
+          top: 1226.73px;
+
+          border: 10px solid #e5faa8;
+          transform: rotate(-45deg);
+        }
+        .stripes-line2 {
+          position: absolute;
+          width: 2184.58px;
+          height: 0px;
+          left: 27.46px;
+          top: 1226.73px;
+
+          border: 10px solid #ff8fd9;
+          transform: rotate(-45deg);
+        }
+        .stripes-line3 {
+          position: absolute;
+          width: 2184.58px;
+          height: 0px;
+          left: -52.27px;
+          top: 1226.73px;
+
+          border: 10px solid #95c0fb;
+          transform: rotate(-45deg);
+        }
+        .stripes-line4 {
+          position: absolute;
+          width: 2184.58px;
+          height: 0px;
+          left: -132px;
+          top: 1226.73px;
+
+          border: 10px solid #aef5ed;
+          transform: rotate(-45deg);
+        }
+      }
+
+      @media screen and (max-width: 428px) {
+        body {
+          width: 428px;
+          height: 926px;
+        }
+        .frame-11265 {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+          width: 343px;
+          height: 136px;
+          left: calc(50% - 343px / 2 - 2.5px);
+          top: 268px;
+        }
+
+        .speakingof {
+          /* Speakingof. */
+          width: 343px;
+          height: 73px;
+          font-size: 60px;
+          line-height: 73px;
+        }
+
+        .frame-11255 {
+          /* Frame 11255 */
+          gap: 10px;
+
+          flex-direction: row;
+          width: 215px;
+          height: 48px;
+        }
+        /*
+              .building {
+              } */
+
+        .hammer {
+          font-size: 45px;
+        }
+
+        .checkusbtn {
+          /* Frame 11258 */
+          /* Frame 11258 */
+
+          /* Auto layout */
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 15px 25px;
+          gap: 15px;
+
+          position: absolute;
+          width: 186px !important;
+          height: 54.89px;
+          left: calc(50% - 186px / 2 + 70px) !important;
+          bottom: 79px !important;
+
+          background: #ffffff;
+          box-shadow: -137px 120px 51px rgba(11, 36, 40, 0.01),
+            -88px 77px 47px rgba(11, 36, 40, 0.12),
+            -49px 43px 39px rgba(11, 36, 40, 0.4),
+            -22px 19px 29px rgba(11, 36, 40, 0.68),
+            -5px 5px 16px rgba(11, 36, 40, 0.79),
+            0px 0px 0px rgba(11, 36, 40, 0.8);
+          border-radius: 44px;
+        }
+
+        .checkusbtn a {
+          /* Check us at */
+          width: 91px ;
+          height: 24px;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 600;
+        }
+
+        .frame-11583 {
+          /* Frame 11583 */
+          /* Auto layout */
+          width: 249px;
+          height: 685px;
+          left: 0px;
+          top: -22px;
+          overflow-y: hidden !important;
+        }
+        .frame-11583-xyz {
+          /* xyz xyz xyz xyz xyz */
+          width: 249px;
+          height: 685px;
+
+          font-size: 140px;
+          z-index: -10;
+          letter-spacing: 0.02em;
+          overflow-y: hidden !important;
+          /* or 270px */
+        }
+
+        .stripes-container {
+          height: 1080px;
+          left: -36.92%;
+          right: -174.3%;
+          top: calc(50% - 1080px / 2 + 77px);
+        }
+
+        .stripes-inner-container {
+          width: 1783.92px;
+          height: 1544.73px;
+          left: -132px;
+          top: -318px;
+        }
+
+        .stripes-line1 {
+          position: absolute;
+          width: 2184.58px;
+          height: 0px;
+          left: 107.19px;
+          top: 1226.73px;
+
+          border: 10px solid #e5faa8;
+          transform: rotate(-45deg);
+        }
+        .stripes-line2 {
+          position: absolute;
+          width: 2184.58px;
+          height: 0px;
+          left: 27.46px;
+          top: 1226.73px;
+
+          border: 10px solid #ff8fd9;
+          transform: rotate(-45deg);
+        }
+        .stripes-line3 {
+          position: absolute;
+          width: 2184.58px;
+          height: 0px;
+          left: -52.27px;
+          top: 1226.73px;
+
+          border: 10px solid #95c0fb;
+          transform: rotate(-45deg);
+        }
+        .stripes-line4 {
+          position: absolute;
+          width: 2184.58px;
+          height: 0px;
+          left: -132px;
+          top: 1226.73px;
+
+          border: 10px solid #aef5ed;
+          transform: rotate(-45deg);
+        }
+      }
+    </style>
+
     <title>SpeakingOf. - Buiding⚒️</title>
   </head>
   <body>
-    <div class="container">
-      <div class="banner-text">
-        <h1>SpeakingOf.</h1>
-        <h4>Buiding ⚒️</h4>
-      </div>
+    <div class="checkusbtn">
+      <a href="https://twitter.com/speakingofxyz" target="_blank">Check us</a>
+      <img src="./src/img/logos_twitter.png" alt="" />
+    </div>
 
-      <div class="stripes">
-        <div class="line line1"></div>
-        <div class="line line2"></div>
-        <div class="line line3"></div>
-        <div class="line line4"></div>
+    <div class="frame-11265">
+      <h1 class="speakingof">SpeakingOf.</h1>
+      <div class="frame-11255">
+        <p class="building">Building</p>
+        <p class="hammer">⚒️</p>
       </div>
+    </div>
 
-      <footer>
-        <div class="container">
-          <a href="https://twitter.com/speakingofxyz" target="_blank">
-            <img src="./src/img/logos_twitter.png" />
-            @speakingofxyz
-          </a>
-        </div>
-      </footer>
+    <div class="frame-11583">
+      <div class="frame-11583-xyz">xyz xyz xyz xyz xyz</div>
+    </div>
+
+    <div class="stripes-container">
+      <div class="stripes-inner-container">
+        <div class="stripes-line1"></div>
+        <div class="stripes-line2"></div>
+        <div class="stripes-line3"></div>
+        <div class="stripes-line4"></div>
+      </div>
     </div>
   </body>
 </html>
