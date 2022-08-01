@@ -10,6 +10,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
       body {
         background: #051113;
+        overflow: hidden;
       }
       .frame-11265 {
         /* Frame 11256 */
@@ -165,7 +166,7 @@
 
         /* border: 2px solid #ffffff !important; */
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #ffffff;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.45);
         /* Inside auto layout */
 
         flex: none;
@@ -358,11 +359,15 @@
 
       @media screen and (max-width: 428px) {
         body {
-          width: 428px;
-          height: 926px;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          max-width: 100vw;
+          max-height: 100vh;
+          position: relative;
         }
         .frame-11265 {
-          flex-direction: column;
+          flex-direction: column-reverse;
           align-items: flex-start;
           gap: 15px;
           width: 343px;
@@ -396,11 +401,6 @@
         }
 
         .checkusbtn {
-          /* Frame 11258 */
-          /* Frame 11258 */
-
-          /* Auto layout */
-
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -408,10 +408,11 @@
           gap: 15px;
 
           position: absolute;
-          width: 186px !important;
+          width: 186px;
           height: 54.89px;
-          left: calc(50% - 186px / 2 + 70px) !important;
-          bottom: 79px !important;
+          left: calc(50% - 186px / 2 + 70px);
+          /*bottom: 79px !important; */
+          top: calc(0.8 * 100vh);
 
           background: #ffffff;
           box-shadow: -137px 120px 51px rgba(11, 36, 40, 0.01),
@@ -454,58 +455,43 @@
         }
 
         .stripes-container {
-          height: 1080px;
-          left: -36.92%;
-          right: -174.3%;
-          top: calc(50% - 1080px / 2 + 77px);
+          position: absolute;
+          height: 100%;
+           width: 100%;
+          left: 0%;
+          right: 0%;
+          top: calc(50% - 926px / 2);
+          background: red;
+          
         }
 
         .stripes-inner-container {
-          width: 1783.92px;
-          height: 1544.73px;
-          left: -132px;
-          top: -318px;
+          position: absolute;
+          width: 2269px;
+          height: 1464px;
+          left: 0px;
+          top: -5380px;
         }
 
         .stripes-line1 {
-          position: absolute;
-          width: 2184.58px;
-          height: 0px;
           left: 107.19px;
-          top: 1226.73px;
 
           border: 10px solid #e5faa8;
-          transform: rotate(-45deg);
         }
         .stripes-line2 {
-          position: absolute;
-          width: 2184.58px;
-          height: 0px;
           left: 27.46px;
-          top: 1226.73px;
 
           border: 10px solid #ff8fd9;
-          transform: rotate(-45deg);
         }
         .stripes-line3 {
-          position: absolute;
-          width: 2184.58px;
-          height: 0px;
           left: -52.27px;
-          top: 1226.73px;
 
           border: 10px solid #95c0fb;
-          transform: rotate(-45deg);
         }
         .stripes-line4 {
-          position: absolute;
-          width: 2184.58px;
-          height: 0px;
           left: -132px;
-          top: 1226.73px;
 
           border: 10px solid #aef5ed;
-          transform: rotate(-45deg);
         }
       }
     </style>
@@ -513,7 +499,7 @@
     <title>SpeakingOf. - Buiding⚒️</title>
   </head>
   <body>
-    <div class="checkusbtn" style="cursor: pointer;">
+    <div class="checkusbtn">
       <a href="https://twitter.com/speakingofxyz">Check us</a>
       <img src="./src/img/logos_twitter.png" alt="" />
     </div>
